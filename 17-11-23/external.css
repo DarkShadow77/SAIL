@@ -1,0 +1,30 @@
+div{
+    color: red;
+}
+#internal{
+    color: peru;
+}
+.internal1{
+    color: maroon;
+}
+.internal2{
+    color: lightskyblue;
+}
+.shadow{
+    text-shadow: 1px 2px 4px red;
+}
+.google{
+    font-size: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: cornflowerblue; 
+}
+#o1{
+    color: red;
+}
+#o2{
+    color: darkorange;
+}
+#l{
+    color: lightgreen;
+}
