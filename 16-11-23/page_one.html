@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Image</h1>
+    <img src="./assets/image.jpg" height="200px" alt="Sail Image">
+    <h1>Audio</h1>
+                              
+    <audio controls src="./assets/believer.mp3"></audio>
+
+    <h1>Video</h1>
+    <video controls height="600px" src="./assets/won_da_mo.mp4"></video>
+    <h3>Mavins, Rema & Boy Spyce- Won Da Mo (ft.Crayon, Ayra Starr, Bayanni, LADIPOE, Magixx &Johnny Drille)</h3>\
+
+    <h1 style="color: blue; font-family: 'Nanum Myeongjo', serif;">G<span style="color: red;">o</span><span
+            style="color: yellow;">o</span>g<span style="color: green;">l</span><span style="color: red;">e</span></h1>
+
+
+    <h1>Forms</h1>
+    <form action="" method="">
+
+        <div>
+            <label for="title">Title:</label>
+            <select name="title" id="title">
+                <option value="Dr.">Dr.</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss.">Miss.</option>
+                <option value="Chief.">Chief.</option>
+            </select>
+        </div><br>
+
+        <label for="name">Full Name: </label><input type="text" id="name" placeholder="John Doe"><br><br>
+        <label for="number">Phone Number: </label><input type="tel" id="number" placeholder="+234 --- -- ---"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+        <label for="email">Email: </label><input type="email" id="email" placeholder="example@gmail.com"><br><br>
+        <label for="password">Password: </label><input type="password" title="Password must contain 6 char."
+            id="password" placeholder="*******"><br><br>
+        <div>Gender:
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="binary" name="gender" value="others">
+            <label for="binary">Others</label>
+        </div><br>
+
+        <label for="address">Address: </label><textarea type="text" id="address"
+            placeholder="example@gmail.com"></textarea><br><br>
+
+        <div>
+            <label for="">Skills: </label>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" value="html">
+
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" value="css">
+                                        
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" value="python">
+            <br><br>
+        </div>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
