@@ -1,0 +1,12 @@
+section{
+    display: grid;
+    background-color: cyan;
+    padding: 4px;
+    grid-template-columns: 2fr 4fr 1fr;
+}
+
+div{
+    background-color: crimson;
+    padding: 10px;
+    border: 1px solid;
+}

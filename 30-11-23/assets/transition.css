@@ -1,0 +1,44 @@
+* {
+    text-align: center;
+    background-color: darkblue;
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes adeola {
+    from {
+        transform: translateX(-1200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+button {
+    width: 300px;
+    margin-top: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: black;
+    color: aliceblue;
+    transition-property: background-color width;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    animation-name: adeola;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-delay: 2s;
+
+}
+
+button:hover{
+    background-color: red;
+    width: 600px;
+}
