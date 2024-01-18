@@ -1,5 +1,10 @@
 body {
     background-color: yellow;
+    margin: 0px;
+}
+
+.body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +15,6 @@ body {
     background-color: bisque;
     width: 400px;
     border-radius: 20px;
-    filter: drop-shadow(30px 5px white) 
 }
 
 .body1 {
@@ -62,7 +66,7 @@ body {
 
 .button {
     width: 60px;
-    
+
     height: 50px;
     padding: 10px 10px;
     display: flex;
@@ -82,7 +86,7 @@ body {
     width: 255px;
 }
 
-.button1{
+.button1 {
     height: 50px;
     width: 60px;
     padding: 10px 10px;
@@ -94,6 +98,7 @@ body {
     color: white;
     margin: 5px 5px;
 }
+
 .button0 {
     width: 150px;
 }
