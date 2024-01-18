@@ -10,7 +10,7 @@ body {
     background-color: bisque;
     width: 400px;
     border-radius: 20px;
-    box-shadow: 30px 200px 5px white
+    filter: drop-shadow(30px 5px white) 
 }
 
 .body1 {
