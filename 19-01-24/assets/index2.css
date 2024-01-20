@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+background-color: black;
+}
+.body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time{
+    font-size: 50px;
+    font-weight: 700;
+    color: aqua;
+}
