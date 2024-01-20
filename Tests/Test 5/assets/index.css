@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+.body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown {
+
+    position: relative;
+    font-size: 10em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 168, 253), #fff 35%, #e00a95);
+    background-size: 200% auto;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 75%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+        text-shadow: 0 0 40px white;
+    }
+
+    100% {
+        background-position: 0% 70%;
+        text-shadow: 0 0 60px white;
+    }
+
+}
