@@ -1,0 +1,12 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#car{
+color: aquamarine;
+}
