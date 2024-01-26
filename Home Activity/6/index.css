@@ -100,12 +100,10 @@ a {
 }
 
 .body2 {
-
     width: 100%;
     min-height: 3324px;
     background: url(./assets/background2.png) no-repeat;
     background-size: cover;
-    background-color: beige;
 }
 
 .container1 {
