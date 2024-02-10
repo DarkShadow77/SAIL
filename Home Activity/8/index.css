@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+
+.body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: aqua;
+    font-size: 4rem;
+}
