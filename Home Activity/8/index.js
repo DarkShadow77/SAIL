@@ -10,9 +10,14 @@ let minutesV = 0;
 let secondsV = 0;
 
 
+pause.style.display = "none"
+stop.style.display = "none"
 
 start.addEventListener("click", () => {
     let startTime = setInterval(function () {
+        start.style.display = "none"
+        pause.style.display = ""
+        stop.style.display = ""
 
         secondsV += 1
         seconds.textContent = secondsV;
@@ -30,7 +35,9 @@ start.addEventListener("click", () => {
     }, 1000)
     pause.addEventListener("click", () => {
 
+        pause.style.display = "none"
         clearInterval(startTime)
+        start.style.display = ""
         start.textContent = "RESUME"
 
     })
@@ -41,6 +48,12 @@ start.addEventListener("click", () => {
         hourV = 0;
 
         clearInterval(startTime)
+        
+        start.textContent = "START"
+        
+        start.style.display = ""
+        pause.style.display = "none"
+        stop.style.display = "none"
 
         seconds.textContent = secondsV;
         minutes.textContent = minutesV;
