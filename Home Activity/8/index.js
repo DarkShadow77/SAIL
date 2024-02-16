@@ -2,6 +2,7 @@ let hour = document.getElementById("hour");
 let minutes = document.getElementById("minute");
 let seconds = document.getElementById("seconds");
 let start = document.getElementById("start");
+let pause = document.getElementById("pause");
 let stop = document.getElementById("stop");
 
 let hourV = 0;
@@ -27,6 +28,12 @@ start.addEventListener("click", () => {
         }
 
     }, 1000)
+    pause.addEventListener("click", () => {
+
+        clearInterval(startTime)
+        start.textContent = "RESUME"
+
+    })
     stop.addEventListener("click", () => {
 
         secondsV = 0;
