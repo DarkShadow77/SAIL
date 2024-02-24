@@ -22,7 +22,6 @@ function removeFromCart(arr:Product[], itemName: string){
             index = x;
             console.log(index)
         }
-        
     }
     return arr.splice(index, 1);
 }

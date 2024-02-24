@@ -7,6 +7,6 @@ let b = [];
 (0, model_1.addToCart)(b, { name: "Iphone 16", price: 10000, quantity: 1 });
 (0, model_1.addToCart)(b, { name: "Alienware m15", price: 100000, quantity: 1 });
 console.log(b);
-(0, model_1.removeFromCart)(b, "name");
+(0, model_1.removeFromCart)(b, "spagetti");
 console.log(b);
 console.log((0, model_1.totalPrice)(b));
