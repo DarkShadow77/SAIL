@@ -25,7 +25,7 @@ body {
     margin: 0px 10px;
     box-sizing: border-box;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -52,26 +52,16 @@ body {
 
 #firstpage>nav>#hover {
     position: absolute;
-    left: 210px;
+    left: 630px;
     height: 112px;
     opacity: .2;
+    transition: .5s;
 }
-
-#firstpage>nav>ul:nth-child(1):hover ∼ {
-    #firstpage>nav>#hover {
-        left: 0;
-    }
-}
-
-#firstpage>nav>ul>a:nth-child(3):hover  {
-        color: #F44336;
-    }
-
 
 #firstpage>nav>#active {
     position: absolute;
-
     height: 112px;
+    left: 620px;
 }
 
 #firstpage>#firstpage_content>#name_role>#name {
