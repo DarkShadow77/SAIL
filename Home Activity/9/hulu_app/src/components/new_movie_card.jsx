@@ -1,9 +1,7 @@
 import styles from "../assets/css/new_movie_card.module.css"
 export default (props) => {
 
-    const bgColor = ()=> {
-        let bgColor = document.get
-    }
+   
 
     return (
         <>
