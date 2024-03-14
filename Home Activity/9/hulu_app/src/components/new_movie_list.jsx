@@ -48,8 +48,8 @@ export default () => {
 
     const myComponentList = [];
 
-    myList.forEach((item, index) => {
-        myComponentList.push(<NewMovieCard title={item.title} image={item.image} rgb={item.rgb} title_image={item.title_image} description={item.description} genre={item.genre}/>);
+    myList.forEach(({title, image, rgb, title_image, description, genre}) => {
+        myComponentList.push(<NewMovieCard title={title} image={image} rgb={rgb} title_image={title_image} description={description} genre={genre}/>);
     });
 
     return (

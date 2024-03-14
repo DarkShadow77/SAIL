@@ -5,12 +5,16 @@ import './App.css'
 import Greeting from "./Greeting"
 import Login from "./Login"
 import Register from "./Register"
+import Person from './components/Person'
 
 function App() {
 
   return (
     <section>
       <div>
+        <Person oruko="David"></Person>
+        <Person oruko="Ademola"/>
+        <Person oruko="Mark"/>
         <Login/>
         <Register/>
       </div>
