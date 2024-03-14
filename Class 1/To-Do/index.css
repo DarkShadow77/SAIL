@@ -61,11 +61,11 @@ h1 {
     border: none;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     color: bisque;
     font-size: 1rem;
     font-weight: 600;
     text-transform: capitalize;
-    -webkit-backdrop-filter: blur(20px);
 }
 
 #send {

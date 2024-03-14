@@ -1,0 +1,11 @@
+#text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #16181d;
+
+}

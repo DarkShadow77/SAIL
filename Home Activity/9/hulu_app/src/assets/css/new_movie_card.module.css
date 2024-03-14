@@ -1,0 +1,141 @@
+.new_movie_card {
+    width: 316px;
+    height: 470px;
+    display: flex;
+    place-items: center;
+    padding: 6px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+    margin-right: 10px;
+}
+
+.new_movie_card:hover {
+    border: 4px solid #8b94a7;
+    border-radius: 16px;
+}
+
+.new_movie_card:hover .description {
+    max-height: 12rem;
+    opacity: 1;
+}
+
+.card_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.movie_details {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 16px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.img_container {
+    position: relative;
+    margin-bottom: 8px;
+    z-index: 3;
+}
+
+.img_container img {
+    position: relative;
+    max-height: 69px;
+    max-width: 100%;
+    z-index: 10;
+}
+
+.movie_title {
+    font-size: 2.5rem;
+    visibility: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: 1.18em;
+}
+
+.description {
+    position: reltive;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 15px;
+    max-height: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    opacity: .2;
+    transition: max-height .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.sub_description {
+    font-size: 14px;
+    line-break: 1;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.movie_action {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    padding: 0px 16px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(11, 12, 15, .1);
+    z-index: 2;
+}
+
+.action_button {
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1.5px solid white;
+    opacity: .75;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 2;
+}
