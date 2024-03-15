@@ -32,18 +32,25 @@ class Toggle extends Component {
             })
         }
     }
-    
+    nameChangeHandler(newName){
+        this.setState({
+            person: [
+                { name: newName, age: 30 },
+                { name: "newName" },
+                { name: newName },
+            ]
+        })
+   } 
     render() {
 
         return (
             <>
-                <Lizzy name={this.state.person[0].name} />
-                <Lizzy name={this.state.person[1].name} />
-                <Lizzy name={this.state.person[2].name} />
+                <Lizzy name={this.state.person[0].name} change={()=>this.nameChangeHandler(event.target.value)}/>
+                <Lizzy name={this.state.person[1].name} change={()=>this.nameChangeHandler(event.target.value)}/>
+                <Lizzy name={this.state.person[2].name} change={()=>this.nameChangeHandler(event.target.value)}/>
 
                 <button onClick={() => {
                     this.setState({tswitch : !this.state.tswitch})
-                    console.log(this.state.tswitch)
                     this.changeName(this.state.tswitch)
                 }}> {this.state.tswitch ?"Switch Name" : "Toggle+" }</button>
             </>
