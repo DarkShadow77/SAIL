@@ -42,19 +42,22 @@ function App() {
       price: "4,236,500"
     },
   ];
-
+ const array = ["david","Joseph","Issac"];
   return (
     <>
       <h1>Product Page</h1>
-      <div id='cardCont'>
+      {
+        array.map()
+      }
+      {/* <div id='cardCont'>
         {
           productArray.map((item) => {
             return (
               <Product img={item.img} name={item.name} price={item.price} />
-            )
+              )
           })
         }
-      </div>
+      </div> */}
     </>
   )
 }
