@@ -1,7 +1,14 @@
 #root {
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #cardCont {
@@ -9,6 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 #card {
   width: 20%;
   height: 50vh;
@@ -36,27 +44,31 @@ p {
   font-weight: bolder;
 }
 
-img{
+img {
   object-fit: contain;
   height: 25vh;
   width: 100%;
 }
 
-button{
+button {
+  height: 50px;
+  color: beige;
+  background-color: blueviolet;
+}
+
+#cardButton {
   width: 100%;
   background-color: blueviolet;
   color: beige;
   visibility: hidden;
 }
 
-#card:hover{
+#card:hover {
   box-shadow: 5px 5px 10px rgb(119, 116, 116, .2),
-              -5px -5px 10px rgb(119, 116, 116, .2)
-  ;
+    -5px -5px 10px rgb(119, 116, 116, .2);
 }
-#card:hover  button{
+
+#card:hover button {
   visibility: visible;
-  
+
 }
-
-

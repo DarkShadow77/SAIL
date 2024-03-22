@@ -35,7 +35,6 @@ function App() {
     array.splice(index, 1)
 
     setTodo([...array])
-
   }
 
   return (

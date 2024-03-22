@@ -5,22 +5,9 @@ import './App.css'
 
 function App() {
 
+  const [logged, setlogged] = useState(false)
+
   const productArray = [
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/342027/1.jpg?0825",
-      name: `Apple MacBook Air 13" M1 Chip 8GB 256GB 2020 Model - Gray`,
-      price: "1,450,000"
-    },
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/3777482/1.jpg?8381",
-      name: `Apple MacBook Air 15" Laptop - M2 Chip - 8GB Memory - 256GB SSD (Latest Model) - MIDNIGHT 2023`,
-      price: "1,850,000"
-    },
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/6228782/1.jpg?9548",
-      name: `Apple MacBook Pro 16" Laptop - M3 Pro Chip - 18GB 18-core GPU - 512GB SSD - Space Black`,
-      price: "3,850,000"
-    },
     {
       img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/1226192/1.jpg?6754",
       name: `Apple MacBook Pro 16‑inch M3 Max Chip 4TB 128GB RAM English - Space Black`,
@@ -41,21 +28,50 @@ function App() {
       name: `DELL ALIENWARE M18 R1, I9-13thGEN, 1TB/32GB, 4080`,
       price: "4,236,500"
     },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/342027/1.jpg?0825",
+      name: `Apple MacBook Air 13" M1 Chip 8GB 256GB 2020 Model - Gray`,
+      price: "1,450,000"
+    },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/58/3777482/1.jpg?8381",
+      name: `Apple MacBook Air 15" Laptop - M2 Chip - 8GB Memory - 256GB SSD (Latest Model) - MIDNIGHT 2023`,
+      price: "1,850,000"
+    },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/6228782/1.jpg?9548",
+      name: `Apple MacBook Pro 16" Laptop - M3 Pro Chip - 18GB 18-core GPU - 512GB SSD - Space Black`,
+      price: "3,850,000"
+    },
   ];
- const array = ["david","Joseph","Issac"];
+
+  function LogIn() {
+    setlogged(!logged)
+  }
+
   return (
     <>
-      <h1>Product Page</h1>
-      
-      <div id='cardCont'>
-        {
-          productArray.map((item) => {
-            return (
-              <Product img={item.img} name={item.name} price={item.price} />
-              )
-          })
-        }
+      <div id='header'>
+
+        <h1>Product Page</h1>
+        <button style= {logged ? {backgroundColor: "blueviolet"} :{backgroundColor: "black"}} onClick={LogIn}>
+          {logged ? "Log Out" : "Log In"}
+        </button>
       </div>
+
+      {
+        logged ? 
+          <div id='cardCont'>
+            {
+              productArray.map((item) => {
+                return (
+                  <Product img={item.img} name={item.name} price={item.price} />
+                )
+              })
+            }
+          </div> : 
+        "Please Log In"
+      }
     </>
   )
 }
