@@ -46,10 +46,8 @@ function App() {
   return (
     <>
       <h1>Product Page</h1>
-      {
-        array.map()
-      }
-      {/* <div id='cardCont'>
+      
+      <div id='cardCont'>
         {
           productArray.map((item) => {
             return (
@@ -57,7 +55,7 @@ function App() {
               )
           })
         }
-      </div> */}
+      </div>
     </>
   )
 }
