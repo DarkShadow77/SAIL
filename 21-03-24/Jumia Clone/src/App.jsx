@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Product from './components/product';
 import Items from './components/frredom'
-import './App.css'
+import style from './App.module.css'
 
 function App() {
 
@@ -49,19 +49,24 @@ function App() {
     setlogged(!logged)
   }
 
+  const hiz = () => {
+    console.log("message")
+    document.getElementById(style.header).style.display = "block";
+  }
+
   return (
     <>
-      <div id='header'>
+      <div id={style.header}>
 
         <h1>Product Page</h1>
-        <button style= {logged ? {backgroundColor: "blueviolet"} :{backgroundColor: "black"}} onClick={LogIn}>
+        <button style= {logged ? {backgroundColor: "blueviolet"} :{backgroundColor: "black"}} onClick={hiz}>
           {logged ? "Log Out" : "Log In"}
         </button>
       </div>
 
       {
         logged ? 
-          <div id='cardCont'>
+          <div id={style.cardCont}>
             {
               productArray.map((item) => {
                 return (
