@@ -13,19 +13,9 @@
     background-color: #f7f7f7;
     align-items: center;
     box-sizing: border-box;
-    row-gap: 20px;
+    justify-content: space-between;
 }
-#sideNav a{
-    text-decoration: none;
-    color: black;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 15px;
-    padding: 10px 0px;
-    box-sizing: border-box;
-}
+
 
 #output{
     display: flex;
