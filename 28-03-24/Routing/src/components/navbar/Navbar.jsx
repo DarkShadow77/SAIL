@@ -11,7 +11,7 @@ function NavBar(props) {
                     <Link to={"/"}>
                         <div className="link">Home</div>
                     </Link>
-                    <Link to={"/about"}>
+                    <Link to={"/about"} >
                         <div className="link">About</div>
                     </Link>
                     <Link to={"/service"}>
